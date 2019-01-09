@@ -1,0 +1,45 @@
+{
+    "name": "get-git-date",
+    "description": "Gets the date a file was last modified in a git repo.",
+    "version": "0.0.0",
+    "author": {
+        "name": "Michael Novotny",
+        "email": "manovotny@gmail.com",
+        "url": "https://manovotny.com"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/manovotny/get-git-date.git"
+    },
+    "keywords": [
+        "alter",
+        "altered",
+        "date",
+        "git",
+        "last",
+        "iso",
+        "iso8601",
+        "modified"
+    ],
+    "engines": {
+        "node": ">=8.6.0",
+        "yarn": ">=1.0.0"
+    },
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint . --ext .json --ext .js",
+        "prettier": "prettier --write \"**/*.{js,md,yml}\"",
+        "test": "yarn lint"
+    },
+    "dependencies": {
+        "execa": "1.0.0"
+    },
+    "devDependencies": {
+        "eslint": "4.19.1",
+        "eslint-config-get-off-my-lawn-prettier": "1.0.0",
+        "husky": "1.3.1",
+        "lint-staged": "8.1.0",
+        "prettier": "1.15.3"
+    }
+}
